@@ -1,7 +1,7 @@
 Lab 5: Grouping and Summarizing Movie Data
 --------------------------------------------
 
-Today we're going to delve deeper into movie data using R and our new understanding of `group_by()` and `summarize()` from last week's DataCamp session.
+Today we're going to delve deeper into movie data using R and our new understanding of `group_by()` and `summarize()` from our recent DataCamp session.
 
 Let's start by loading the packages and data we need.
 

@@ -5,6 +5,8 @@ Please go to Rstudio cloud and open your school_census project. You can complete
 
 # Getting the data:
 
+The "clean_census" function cleans up some messy data.  You can look at the data with "View()" before and after cleaning it.
+
 ```r
 library(tidyverse)
 
@@ -14,13 +16,17 @@ c2020 = read.csv("census_ny_all_grades_2020.csv")
 c2022 = read.csv("census_ny_all_grades_2022.csv")
 census = rbind(c2020, c2022)
 
+View(census) #before cleaning
+
 census = clean_census(census)
+
+View(census) #after cleaning
 ```
 
 # Univariate Plots
 (one variable at a time)
 
-We can plot categorical variables with bar plots.  Here's a bar plot of ways students travelled to school.
+We can plot categorical variables with bar plots.  Here's a bar plot of ways students traveled to school.
 
 ```r
 census %>% ggplot(aes(Travel_to_School))+

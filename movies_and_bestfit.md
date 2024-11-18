@@ -45,7 +45,7 @@ lm(audience_score ~ critics_score,
 
 R is telling us that the equation for this line is:
 
-$$audience\_score\ = 0.5015 \cdot critics\_score + 33.4355$$
+$$audience\ score\ = 0.5015 \cdot critics\ score + 33.4355$$
 
 We can view this as a prediction line -- it tells us how to predict the audience score from the critics score.  In fact, this line is line that makes predictions with the lowest root mean square error.
 

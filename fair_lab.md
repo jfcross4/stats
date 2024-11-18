@@ -50,7 +50,7 @@ percent at an annual rate except for 1920, 1944, and 1948, where
 the values are zero.
 
 ___
-**Question 1:** Compare this data to the data table on page 12 of your reading.  What differences do you see?
+**Question 1:** Compare this data to the data table on pages 14-15 of your reading.  What differences do you see?
 
 ___
 
