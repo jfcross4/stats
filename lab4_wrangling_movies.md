@@ -3,7 +3,7 @@ Lab 4: Wrangling and Plotting Movie Data
 
 Today we're going to practice wrangling and plotting data in R and, perhaps, learn something about movies.
 
-Please open up posit.cloud and open the "Wrangling and Plotting Movie Data" project in the "Statistics 2024-2023" work space.  This will give you a work space in which the packages we need are already installed.  You'll still need to load them use the "library" function.
+Please open up posit.cloud and create a new project in the "Statistics 2024-2025" work space.  This will give you a work space in which the packages we need are already installed.  You'll still need to load them use the "library" function.
 
 First, run the code to load the packages we need:
 
