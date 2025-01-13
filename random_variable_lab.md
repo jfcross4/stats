@@ -3,7 +3,7 @@ Random Variable Lab
 
 In this lab we'll lab we'll learn about Random Variables and use the **DiscreteRV** package.
 
-First, log in to *rstudio.cloud* and, using the lower right panel, install the discreteRV package.
+First, log in to *rstudio.cloud* and then create a new project or continue working within an existing project that is within our class work space (that way the DiscreteRV package will already be installed).
 
 Run each of the lines of code below and try answering each of the questions.
 
@@ -112,42 +112,53 @@ sqrt(V(twenty_dice))
 
 6. What is the probability that you win money if you play roulette 20 times?
 
-7. Simulating the 2024 Election (with some stylized facts)
+7. Simulating the *2054 Election* (with some stylized facts)
 
-On the night before the election, according to your model, Biden has 15 states, the District of Columbia, and 199 electoral college votes locked up.  Trump has 23 states and 188 electoral college votes in the bag.  The other 12 states can each be represented as a random variable (as shown below):
+On the night before the election, according to your model, Charlotte has 15 states, the District of Columbia, and 199 electoral college votes locked up.  Rhea has 23 states and 188 electoral college votes in the bag.  The other 12 states can each be represented as a random variable (as shown below). The random variables are from Charlotte's point of view.  So, we think Charlotte is looking good in Virginia where she has a 95% chance of getting the 13 electoral college votes but Rhea is in command in Colorado, where Charlotte only has a 9% chance of getting the 9 electoral college votes.
 
 ```r
-Oregon <- RV(outcomes=c(0,7), probs=c(0.02, 0.98))
-Colorado <- RV(outcomes=c(0,9), probs=c(0.02, 0.98))
+
+
 Virginia <- RV(outcomes=c(0,13), probs=c(0.05, 0.95))
 New_Mexico <- RV(outcomes=c(0,5), probs=c(0.05, 0.95))
 New_Hampshire <- RV(outcomes=c(0,4), probs=c(0.10, 0.90))
 Nevada <- RV(outcomes=c(0,6), probs=c(0.15, 0.85))
 Pennsylvania <- RV(outcomes=c(0,20), probs=c(0.20, 0.80))
-
-
 Arizona <- RV(outcomes=c(0,11), probs=c(0.30, 0.70))
 Michigan <- RV(outcomes=c(0,16), probs=c(0.35, 0.65))
 Georgia <- RV(outcomes=c(0,16), probs=c(0.50, 0.50))
-
 Florida <- RV(outcomes=c(0,29), probs=c(0.80, 0.20))
+Oregon <- RV(outcomes=c(0,7), probs=c(0.02, 0.15))
 North_Carolina <- RV(outcomes=c(0,15), probs=c(0.90, 0.10))
+Colorado <- RV(outcomes=c(0,9), probs=c(0.95, 0.05))
 
 ```
-You can then create a random variable the is the sum of Biden's electoral college votes and plot it:
+You can then create a random variable that is the sum of Charlotte's electoral college votes and plot it:
 
 ```r
-Biden = 199 + New_Mexico + 
+Charlotte = 199 + New_Mexico + 
   Michigan + Pennsylvania + New_Hampshire +
   Nevada + Oregon + Colorado + Virginia +
   Florida + North_Carolina +
   Arizona + Georgia
 
-plot(Biden)
+plot(Charlotte)
 ```
 
-a. According to this model, what is Biden's chance of winning the election (note that he needs 270 electoral college votes in order to win)?
+a. According to this model, what is Charlotte's chance of winning the election (note that she needs 270 electoral college votes in order to win)?
 
-b. According to this model, what is Biden's chance of winning 300 or more electoral college votes?
+b. According to this model, what is Charlotte's chance of winning 300 or more electoral college votes?
 
-c. What are the shortcomings of this model?  Assuming that the probabilities for each state are correct does this model accurately predict Biden's chances of winning, underestimate his chances or overestimate his chances?
+Note: Once you have a Charlotte random variable, it's easy to create a Rhea random variable...
+
+```r
+Rhea = 538 - Charlotte
+```
+
+you can also plot the difference:
+
+```r
+plot(Rhea-Charlotte)
+```
+
+c. What are the shortcomings of this model?  Assuming that the probabilities for each state are correct does this model accurately predict Charlotte's chances of winning, underestimate her chances or overestimate her chances?
