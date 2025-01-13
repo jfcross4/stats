@@ -128,7 +128,7 @@ Arizona <- RV(outcomes=c(0,11), probs=c(0.30, 0.70))
 Michigan <- RV(outcomes=c(0,16), probs=c(0.35, 0.65))
 Georgia <- RV(outcomes=c(0,16), probs=c(0.50, 0.50))
 Florida <- RV(outcomes=c(0,29), probs=c(0.80, 0.20))
-Oregon <- RV(outcomes=c(0,7), probs=c(0.02, 0.15))
+Oregon <- RV(outcomes=c(0,7), probs=c(0.85, 0.15))
 North_Carolina <- RV(outcomes=c(0,15), probs=c(0.90, 0.10))
 Colorado <- RV(outcomes=c(0,9), probs=c(0.95, 0.05))
 
