@@ -1,7 +1,7 @@
-Lab 6: Plotting, Grouping and Summarizing Kaggle Data
+Plotting, Grouping and Summarizing Kaggle Data
 --------------------------------------------
 
-This week's lab is the third lab in a sequence geared at helping you become an independent data visualizer.  In the first lab, I gave you code to graph census data.  In the second lab you need to modify that code to graph data of your choice.  In this third lab, I'm hoping that you can acquire your own data, load it into R and then visualize it.
+This week's lab is geared at helping you become an independent data visualizer.  In this third lab, I'm hoping that you can acquire your own data, load it into R and then visualize it.  I may give you two weeks to complete this lab.
 
 There are a number of good places to find data.  Today we'll focus on Kaggle Datasets.
 
@@ -54,7 +54,7 @@ View(data)
 
 * Step 8: Try plotting your data!
 
-Take a look at the code from your [census plotting lab](https://github.com/professorkalim/stats22-23/blob/cross/census_plotting.md).
+Take a look at the code from your [Wrangling and Plotting Movie Data lab](https://github.com/jfcross4/stats/blob/master/lab4_wrangling_movies.md).
 
 You can start by making a univariate plot, either a bar plot for a categorical variables or a histogram for a numeric/continuous variable.
 
@@ -62,7 +62,7 @@ Next, try making a bivariate plot.
 
 * Step 7: Challenge: Grouping and summarizing!
 
-Time permitting, try modifying some of the code from our [movie labs earlier in the year](https://github.com/professorkalim/stats22-23/blob/main/lab5_grouping_movie_data.md) to filter, group and summarize your data in some interesting way!
+Time permitting, try modifying some of the code from that same movie plotting lab to filter, group and summarize your data in some interesting way!
 
 
 
