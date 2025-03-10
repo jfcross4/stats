@@ -8,12 +8,12 @@ Please jot down your answers to these questions and we'll compare our answers in
 ```r
 library(tidyverse)
 
-games = read.csv("https://raw.githubusercontent.com/professorkalim/stats22-23/cross/nfl_game_results.csv")
+games = read.csv("https://raw.githubusercontent.com/jfcross4/stats/refs/heads/master/nfl_game_results.csv")
 ```
 
 # The Data
 
-Let's take a look at the raw data.  This data includes the result for every team in every game in each season from 1999 through 2021.
+Let's take a look at the raw data.  This data includes the result for every team in every game in each season from 1999 through 2024.
 
 ```r
 View(games)
@@ -76,6 +76,8 @@ View(results_by_even_wide)
 ```
 
 # Correlations and Scatterplots
+
+
 
 Let's make a scatter plot of second half winning percentage versus first half winning percentage.
 
@@ -154,3 +156,31 @@ results_by_even_wide %>%
 **Question 6:**
 How would you explain this?  Are good teams getting worse?
 
+
+# Equations for Best-Fit Lines
+
+Take a look at the best-fit line for first/second half games again:
+
+```r
+results_by_half_wide %>%
+  ggplot(aes(first, second)) + 
+  geom_jitter() + 
+  geom_smooth(method="lm")
+```
+
+**Question 7:**
+Try to write an equation in the form of $y = mx + b$ for this line.  Remember, if you know two points that lie on the line, you can find the equation for the line.
+
+# Checking your answer
+
+You can check your equation by running the following code which will give you the intercept and the slope of the best fit line:
+
+```r
+lm(second ~ first, data=results_by_half_wide)
+```
+
+Have your equation (roughly) correct?
+
+**Question 8:**
+
+Modify the code above to find the equation for the best fit line of the odd v. even weeks graph.
