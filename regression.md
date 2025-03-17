@@ -28,9 +28,10 @@ We can group by these variables and get results by half...
 results_by_half = 
 games %>%
   group_by(season, team, half) %>%
-  summarize_at(c("win", "loss", "tie"), sum) %>%
+  summarize_at(c("win", "loss", "tie", "result"), sum) %>%
   mutate(games = win+loss+tie, 
-         win_pct = (win + 0.5*tie)/games)
+         win_pct = (win + 0.5*tie)/games,
+         pt_dff = result/games)
 
 View(results_by_half)
 ```

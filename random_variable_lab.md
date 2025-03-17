@@ -50,7 +50,7 @@ Similarly, you can calculate variance by our formula: $$Var[X] = \sum P(x)(x-E[x
 sum(probs(X)*(outcomes(X) - E(X))^2)
 ```
 
-or you can use the Variance function and tqke the square root to get the standard deviation:
+or you can use the Variance function and take the square root to get the standard deviation:
 
 ```r
 V(X)
