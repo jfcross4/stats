@@ -3,7 +3,9 @@ Ray Fair: Predicting the Results of Presidential Elections
 
 # Chapter 1: It's the Economy, Stupid
 
-* First Read Chapter 1, "It's the Economy, Stupid" and then run the following code and answer the chapter one questions in a Google Doc.
+* First Read Chapter 1, "It's the Economy, Stupid"
+
+and then run the following code below and answer the chapter one questions (#'s 1, 2 and 3) in a Google Doc (and share the Google Doc with me).
 
 ## Getting the Data
 
