@@ -114,25 +114,9 @@ c. Interpret the coefficient of `distractions` in the multiple regression model.
 
 d. Suppose a student studies for **4 hours** and has **3 distractions**. Predict how many tasks they complete.
 
-# 4. Conceptual Twist
+# 4. Going Further
 
-A student says:
+a. Give an example from one of the models above where a variable’s importance changed after adding another predictor.
 
-> "If a variable becomes less important after adding another predictor, that means it doesn’t matter."
+b. What does this suggest about the relationship between predictors?
 
-a. Is this statement correct? Explain.
-
-b. Give an example from one of the models above where a variable’s importance changed after adding another predictor.
-
-c. What does this suggest about the relationship between predictors?
-
-# Bonus
-
-Pick one dataset and do one of the following:
-
-- create a third model adding an interaction (if you know how), OR  
-- make a graph using **ggplot** / the **tidyverse** to visualize the relationship between the response and the predictors
-
-For example, you might use a scatterplot with color, faceting, or a fitted line.
-
-What new relationships do you notice?

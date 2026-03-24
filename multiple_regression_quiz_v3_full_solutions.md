@@ -193,55 +193,15 @@ For a student with 4 practice hours and 3 distractions:
 
 Predicted number of tasks completed: about **10.08**
 
-# 4. Conceptual Twist
+# 4. Going Further
 
 ## a.
-
-The statement is **not correct**.
-
-If a variable becomes less important after adding another predictor, that does not mean it “doesn’t matter.” It may mean that the predictors are related to one another, and the new model is separating their effects.
-
-## b.
 
 One example is the used cars data. The coefficient of `hybrid` gets much smaller after adding `mileage`.
 
 Another example is the coffee data, where the coefficient of `cups` becomes much smaller after adding `sleep`.
 
-## c.
+## b.
 
 This suggests that predictors can be related to one another. When that happens, a simple regression may mix together several effects, while a multiple regression tries to isolate the effect of each predictor holding the others constant.
-
-# Bonus
-
-A good answer here could take several forms.
-
-For example, with the focus data:
-
-```r
-library(tidyverse)
-
-ggplot(focus, aes(x = practice_hours, y = tasks_completed, color = distractions)) +
-  geom_point(size = 3) +
-  geom_smooth(method = "lm", se = FALSE)
-```
-
-A student might notice that:
-- more practice hours tends to be associated with more tasks completed
-- more distractions tends to be associated with fewer tasks completed
-- students with similar practice hours can still differ depending on their distraction levels
-
-Or, for the cars data:
-
-```r
-library(tidyverse)
-
-ggplot(cars, aes(x = mileage, y = price, color = hybrid)) +
-  geom_point(size = 3) +
-  geom_smooth(method = "lm", se = FALSE)
-```
-
-Things you might notice:
-- price decreases as mileage increases
-- hybrid cars tend to sit above non-hybrid cars
-- some of the original hybrid effect may really be a mileage effect
 
