@@ -14,7 +14,7 @@ air_bnb = read.csv("https://raw.githubusercontent.com/jfcross4/stats/refs/heads/
 
 # 1. Memory Tests
 
-A stats class was asked to memorize lists of nouns.  In the **pre-test**, all students had 20 seconds to memorize knows and then write down as many of these nouns as they could. Then students were split into two groups.  The "short" time group had another 30 seconds to memorize a second group of nouns while the "long" time group was given 60 seconds.  The number of nouns they recalled among this second batch is their "post-test score".
+A stats class was asked to memorize lists of nouns.  In the **pre-test**, all students had 20 seconds to memorize nouns and then write down as many of these nouns as they could. Then students were split into two groups.  The "short" time group had another 30 seconds to memorize a second group of nouns while the "long" time group was given 60 seconds.  The number of nouns they recalled among this second batch is their "post-test score".
 
 Run the following code to predict post-test scores from pre-test scores:
 
@@ -52,9 +52,9 @@ summary(m1)
 summary(m2)
 ```
 
-The coefficient of "vaccinated" is quite different in these two models.  Why?  Please intepret these results.
+The coefficient of "vaccinated" is quite different in these two models.  Why?  Please interpret these results.
 
-# 3. air bnb
+# 3. Air BnB
 
 The Air BnB data is from rentals in Chicago.  We'll build models to predict the price of air bnb rentals.
 
@@ -76,6 +76,6 @@ You may want to look at the data before attempting these:
 View(air_bnb)
 ```
 
-b. Built a model to predict price from bedroom and rating.  What price do you predict for a place with 3 bedroom and a 4.0 rating?
+b. Build a model to predict price from bedroom and rating.  What price do you predict for a place with 3 bedrooms and a 4.0 rating?
 
 c. Build model to predict price using, first, only "bedrooms" and, second, "bedrooms" and "accommodates".  How does the coefficient of "bedrooms" differ between these models and why might it differ?
